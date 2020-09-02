@@ -11,7 +11,6 @@ class go_neo4j:
 	def __init__(self,host='http://127.0.0.1:7474',username='neo4j',password='neo4j'):
 		#连接neo4j
 		self.graph = Graph(host, username=username, password=password)
-		#初始化neo4j，清空数据
 
 	#清空数据
 	def wipe_data(self):
